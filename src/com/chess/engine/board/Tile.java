@@ -60,7 +60,7 @@ public abstract class Tile {
 	
 	public static final class EmptyTile extends Tile{
 		
-		EmptyTile(int coordinate){
+		private EmptyTile(int coordinate){
 			super(coordinate);
 		}
 		
@@ -82,7 +82,7 @@ public abstract class Tile {
 		 */
 		private final Piece pieceOnTile;
 		
-		OccupiedTile(int tileCoordinate, Piece pieceOnTile){
+		private OccupiedTile(int tileCoordinate, Piece pieceOnTile){
 			super(tileCoordinate);
 			this.pieceOnTile = pieceOnTile;
 		}
